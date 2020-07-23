@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main_background"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <FrameLayout
+            android:id="@+id/appbar_container"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/button_color"
+
+            >
+
+            <View
+                android:id="@+id/toolbar_title"
+                android:layout_width="140dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_pill"
+                android:backgroundTint="@color/substitle" ></View>
+        </FrameLayout>
+    </LinearLayout>
+    <TextView
+        android:paddingTop="20dp"
+        android:id="@+id/heading"
+        android:layout_marginLeft="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crop Disease Detector"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="150dp"
+          android:layout_marginTop="30dp"
+        android:text=" DO's\n "
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"
+
+        android:text="
+        The Algorithm works well with\n
+         single leaf at a time, so try \n
+         uploading images with one leaf"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="15sp"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="150dp"
+        android:text=" DOn'ts"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+         android:layout_marginLeft="20dp"
+        android:textAlignment="center"
+
+        android:text="
+        The Algorithm won't predict when more
+         \nleaves in one image, it is good
+         \nat predicting one leaf at a time"
+        android:textStyle="italic|bold"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="15sp"
+        ></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+         android:layout_marginBottom="40dp"
+        android:orientation="horizontal">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+          android:id="@+id/camera"
+         android:layout_marginLeft="80dp"
+          android:layout_marginTop="20dp"
+        android:src="@drawable/photo1"
+        app:maxImageSize="40dp"
+        android:backgroundTint="@android:color/white"
+        ></com.google.android.material.floatingactionbutton.FloatingActionButton>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+             android:id="@+id/gal"
+            android:layout_weight="1"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="130dp"
+             android:layout_marginTop="20dp"
+            android:src="@drawable/gallery1"
+
+            app:maxImageSize="40dp"
+            android:backgroundTint="@android:color/white"
+            ></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    </LinearLayout>
+</LinearLayout>
